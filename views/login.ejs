@@ -9,24 +9,24 @@
 
 </head>
 
-<body class="bg-gray-100 dark:bg-gray-800 h-screen w-screen flex items-center justify-center">
+<body class="bg-gray-100 dark:bg-gray-300 h-screen w-screen flex items-center justify-center">
 
 
   <form action="/user/login" method="post" class="w-96">
 
-    <div>
+    <div class="mb-8 flex flex-col gap-y-3">
       <label for="username" class="block mb-2.5 text-sm font-medium text-heading">First name</label>
       <input type="text" id="username"
         class="bg-neutral-secondary-medium border border-default-medium text-heading text-sm rounded-base focus:ring-brand focus:border-brand block w-full px-3 py-2.5 shadow-xs placeholder:text-body"
-        placeholder="John" name="username" required />
+        placeholder="" name="username" required />
     </div>
 
  
-    <div class="mb-6">
+    <div  class="mb-8 flex flex-col gap-y-3">
       <label for="password" class="block mb-2.5 text-sm font-medium text-heading">Password</label>
       <input type="password" id="password"
         class="bg-neutral-secondary-medium border border-default-medium text-heading text-sm rounded-base focus:ring-brand focus:border-brand block w-full px-3 py-2.5 shadow-xs placeholder:text-body"
-        placeholder="•••••••••" name="password" required />
+        placeholder="" name="password" required />
     </div>
 
     <button type="submit"
