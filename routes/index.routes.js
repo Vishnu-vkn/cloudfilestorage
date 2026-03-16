@@ -114,4 +114,46 @@ router.get("/download/:_id",authMiddleware,async(req,res)=>{
 })
 
 
+router.get("/delete/:_id",authMiddleware,async(req,res)=>{
+  try{
+     const loggedInUserId=req.user.userId;
+     console.log("Delete route triggered");
+
+     const file = await fileModel.findOne({
+      _id:req.params._id,
+      user:loggedInUserId
+     });
+  
+
+   if(!file){
+    return res.status(404).json({
+      message:'File not found'
+    });
+  }
+
+  //delete from cloudinary
+  console.log(file.public_id);
+console.log(file.resource_type);
+ const result= await cloudinary.uploader.destroy(
+    file.public_id,
+    {resource_type:file.resource_type,
+      type:"private"
+    }
+  );
+
+  console.log(result)
+  //delete from mongodb
+  await fileModel.deleteOne({
+    _id:file._id
+  });
+
+  res.redirect("/home");
+
+}catch(err){
+  console.log(err);
+  res.status(500).send("Error Deleting File");
+}
+
+});
+
 module.exports = router;
