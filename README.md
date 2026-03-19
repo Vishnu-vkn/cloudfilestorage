@@ -38,15 +38,10 @@ A secure backend application that allows users to upload, store, download, and d
 
 ## 📷 Screenshots
 
-### Home Page
-
-![Home](./screenshots/homepage.png)
-
-### User Register
-
-![Upload](./screenshots/user_register.png)
-
----
+<p align="center">
+  <img src="./screenshots/home.png" width="48%" />
+  <img src="./screenshots/upload.png" width="48%" />
+</p> 
 
 ## ⚙️ Run Locally
 
