@@ -44,7 +44,7 @@ A secure backend application that allows users to upload, store, download, and d
 
 ### User Register
 
-![Upload](./screenshots/user register.png)
+![Upload](./screenshots/user_register.png)
 
 ---
 
@@ -62,5 +62,7 @@ npm start
 ## 👨‍💻 Author
 
 **Vishnu Vinodan**
+
 GitHub: https://github.com/Vishnu-vkn
+
 LinkedIn: https://linkedin.com/in/vishnu-vinodan/
