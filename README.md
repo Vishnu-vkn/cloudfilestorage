@@ -40,7 +40,7 @@ A secure backend application that allows users to upload, store, download, and d
 
 <p align="center">
   <img src="./screenshots/home.png" width="48%" />
-  <img src="./screenshots/upload.png" width="48%" />
+  <img src="./screenshots/user_register.png" width="48%" />
 </p> 
 
 ## ⚙️ Run Locally
